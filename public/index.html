@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="apple-touch-icon" href="./logo.png" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <meta
+    name="description"
+    content="Weather Marko is a free online weather-forecast based on your current location."
+  />
+
+  <meta name="keywords" content="Weather, weather-forecast, Marko Perović, sunny, rainy, cloudy, snowy, windy, snow, rain, wind, sun, sunset, sunraise, temperature, max-temperature, min-temperature, highest-temperature, lowest-temperature, humidity, wind speed, sunrise time, sunset time, highest-temperature time, lowest-temperature time, max-temperature time, min-temperature time, precip, precip intensity, pressure, uv index, uv index time, feeling, visibility">
+  <link rel="shortcut icon" href="./logo.png" type="image/png">
+
+    <meta property="og:title" content="Weather Marko">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Weather Marko is a free online weather-forecast based on your current location.">
+    <meta property="og:image" content="./logo.png">
+    <meta property="og:site_name" content="Weather Marko">
+    <meta itemprop="og:image" content="./logo.png">
+    <meta property="og:url" content="https://weather-marko.netlify.app" />
+    <meta itemprop="image" content="./logo.png">
+    
+    <meta name="twitter:title" content="Weather Marko">
+    <meta name="twitter:description" content="Weather Marko is a free online weather-forecast based on your current location.">
+    <meta name="twitter:image" content="./logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="Weather Marko logo">
+    
+    <meta itemprop="name" content="Weather Marko">
+    <html itemscope itemtype="https://weather-marko.netlify.app">
+    <meta itemprop="description" content="Weather Marko is a free online weather-forecast based on your current location.">
+    <meta itemprop="image" content="./logo.png">
+
+    <title>Weather Marko</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <script>
+    if ( "serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js").then(registration =>{
+   console.log("SW Registred");       console.log(registration);
+  }).catch(error => {
+console.log("SW Regstration failed");
+   console.log(error);
+ })
+}
+  </script>
+</html>

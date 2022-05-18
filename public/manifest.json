@@ -1,0 +1,28 @@
+{
+  "name":"Weatherman",
+  "short_name":"Weatherman",
+  "start_url":".",
+  "background_color":"#00a2ff",
+  "theme_color":"#00a2ff",
+  "display":"standalone",
+  "icons":[
+      {
+          "src":"./logo.png",
+          "sizes":"300x300",
+          "type":"image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src":"./logo.png",
+          "sizes":"512x512",
+          "type":"image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src":"./logo.png",
+          "sizes":"300x300",
+          "type":"image/png",
+          "purpose": "any maskable"
+      }
+  ]
+}
